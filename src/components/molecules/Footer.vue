@@ -9,9 +9,8 @@
     <li class="menu-width-max">
       <a href="#">
         <i class="blogicon-list"></i><br />
-        <span class="mini-text">おすすめ</span>
+        <span class="mini-text">メニュー１</span>
       </a>
-
       <ul class="menu-second-level">
         <!-- 下の"#"の部分におすすめ"記事URL"とタイトル等を入れる -->
         <li><a href="#">タイトル１</a></li>
@@ -22,21 +21,16 @@
       </ul>
     </li>
     <li>
-      <a
-        href="https://blog.hatena.ne.jp/はてなID/自分のURL/subscribe"
-        target="_blank"
-      >
+      <a href="" target="_blank">
         <i class="blogicon-hatenablog"></i><br /><span class="mini-text"
-          >読者登録</span
+          >メニュー２</span
         >
       </a>
     </li>
     <li>
-      <a
-        href="https://twitter.com/intent/follow?screen_name=自分のツイッターID"
-      >
+      <a href="">
         <i class="blogicon-twitter"></i><br /><span class="mini-text"
-          >Follow</span
+          >メニュー３</span
         ></a
       >
     </li>

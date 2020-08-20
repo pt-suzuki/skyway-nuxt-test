@@ -1,6 +1,6 @@
 <template>
   <div class="skyway-video">
-    <video id="local-stream"></video>
+    <video width="100%" class="local-stream"></video>
     <div>
       <button @click="mute">{{ muteText }}</button>
       <button @click="disconnect">切断</button>
@@ -11,7 +11,7 @@
         :ref="remoteStream.peerId"
         :key="remoteStream.peerId"
       >
-        <video autoplay :srcObject.prop="remoteStream" width="100%"></video>
+        <video autoplay :srcObject.prop="remoteStream"></video>
       </div>
     </div>
   </div>
@@ -103,3 +103,9 @@ export default class Test extends Vue {
   }
 }
 </script>
+
+<style scoped>
+.local-stream {
+  width: "100px";
+}
+</style>
