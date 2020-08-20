@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": ["jest", "node"]
+  },
+  "include": [
+    "./test/*.<file_test_extension>"
+  ]
+}
