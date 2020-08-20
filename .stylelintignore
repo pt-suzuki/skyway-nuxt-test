@@ -1,0 +1,7 @@
+node_modules*
+
+coverage/*
+
+src/assets/stylesheets/icons.scss
+
+src/assets/*

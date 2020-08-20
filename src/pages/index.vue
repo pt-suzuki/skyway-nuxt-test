@@ -9,7 +9,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Logo from "~/components/Logo.vue";
-import SkywayVideo from "~/components/SkyWayVideoComponent.vue";
+import SkywayVideo from "~/components/molecules/SkyWayVideoComponent.vue";
 
 @Component({
   components: {

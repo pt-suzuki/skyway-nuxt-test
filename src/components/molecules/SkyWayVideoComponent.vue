@@ -11,7 +11,7 @@
         :ref="remoteStream.peerId"
         :key="remoteStream.peerId"
       >
-        <video autoplay :srcObject.prop="remoteStream"></video>
+        <video autoplay :srcObject.prop="remoteStream" width="100%"></video>
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@ export default class Test extends Vue {
     await localVideo.play();
 
     this.peer = await new Peer(this.userName, {
-      key: process.env.SKYWAY_API_KEY || "",
+      key: "4451e1db-e933-483d-9076-18956c2dd73d",
       debug: 3
     });
     this.peer.on("open", this.connect);
@@ -89,7 +89,6 @@ export default class Test extends Vue {
       });
     }
   }
-  // ミュート切り替え
   mute(): void {
     if (this.localStream) {
       const audioTrack = this.localStream.getAudioTracks()[0];
@@ -97,7 +96,6 @@ export default class Test extends Vue {
       audioTrack.enabled = !this.isMute;
     }
   }
-  // 切断
   disconnect(): void {
     if (this.room) {
       this.room.close();
@@ -105,6 +103,3 @@ export default class Test extends Vue {
   }
 }
 </script>
-<style lang="scss" scoped>
-// .skyway-video
-</style>

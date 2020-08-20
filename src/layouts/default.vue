@@ -1,8 +1,21 @@
 <template>
   <div>
     <nuxt />
+    <Footer></Footer>
   </div>
 </template>
+
+<script lang="ts">
+import { Vue, Component } from "vue-property-decorator";
+import Footer from "~/components/molecules/Footer.vue";
+
+@Component({
+  components: {
+    Footer
+  }
+})
+export default class Layouts extends Vue {}
+</script>
 
 <style>
 html {
