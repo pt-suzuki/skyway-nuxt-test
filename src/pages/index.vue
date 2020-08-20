@@ -20,7 +20,19 @@ import SkywayVideo from "~/components/molecules/SkyWayVideoComponent.vue";
 export default class Index extends Vue {
   roomName: string = "sample";
   userName: string = "test";
-  created() {}
+  created() {
+    this.userName = this.makeRandum(10);
+  }
+
+  makeRandum(retLength: number): string {
+    // 生成する文字列に含める文字セット
+    const chars: string = "abcdefghijklmnopqrstuvwxyz0123456789";
+    const charsLength: number = chars.length;
+    const ret: string[] = [...Array(retLength)].map((): string => {
+      return chars[Math.floor(Math.random() * charsLength)];
+    });
+    return ret.join("");
+  }
 }
 </script>
 

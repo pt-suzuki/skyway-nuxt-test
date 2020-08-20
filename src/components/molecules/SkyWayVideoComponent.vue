@@ -1,6 +1,6 @@
 <template>
   <div class="skyway-video">
-    <video width="100%" class="local-stream"></video>
+    <video id="local-stream" width="100%"></video>
     <div>
       <button @click="mute">{{ muteText }}</button>
       <button @click="disconnect">切断</button>
